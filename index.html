@@ -7,8 +7,13 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/squaregame.js"></script>
 <style>
-div.container {max-width:900px}
+table.squares-game td {height:30px;width:30px;}
+table.squares-game td:hover {background-color:green;cursor:pointer;}
+table.squares-game td.player-1 {background-color:lightblue;}
 </style>
 </head>
 <body>
@@ -16,6 +21,13 @@ div.container {max-width:900px}
 <div class="col-xs-12">
  <h1>James Gittins</h1>
  <h2>Software developer</h2>
+</div>
+<div class="col-xs-12" ng-app="squaresgame" ng-controller="Squares">
+    <table class="squares-game" style="width:100%;">
+        <tr ng-repeat="row in gameModel.grid">
+            <td ng-repeat="column in row" ng-click="clickSquare(column)" ng-class="column.ownedBy"></td>
+        </tr>
+    </table>
 </div>
 </div>
 </body>
