@@ -65,7 +65,7 @@ angular.module('squaresgame', [])
             refreshConnectionClass(gridCell);
         }
 
-        var playerSquares = 0;
+        var playerSquares = 250;
         var cpuSquares = 0;
         
         $scope.gameModel = new GameModel(30, 30);
