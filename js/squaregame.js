@@ -38,25 +38,25 @@ angular.module('squaresgame', [])
 
         function testEdges(gridCell) {
 
-            if (gridCell.row > 0 && $scope.gameModel.grid[gridCell.row - 1][gridCell.column].ownedBy == gridCell.ownedBy) {
+            if (gridCell.row > 0 && $scope.gameModel.grid[gridCell.row - 1][gridCell.column].ownedBy != "") {
                 gridCell.top = true;
                 $scope.gameModel.grid[gridCell.row - 1][gridCell.column].bottom = true;
                 refreshConnectionClass($scope.gameModel.grid[gridCell.row - 1][gridCell.column]);
             }
 
-            if (gridCell.row < $scope.gameModel.grid.length - 1 && $scope.gameModel.grid[gridCell.row + 1][gridCell.column].ownedBy == gridCell.ownedBy) {
+            if (gridCell.row < $scope.gameModel.grid.length - 1 && $scope.gameModel.grid[gridCell.row + 1][gridCell.column].ownedBy != "") {
                 gridCell.bottom = true;
                 $scope.gameModel.grid[gridCell.row + 1][gridCell.column].top = true;
                 refreshConnectionClass($scope.gameModel.grid[gridCell.row + 1][gridCell.column]);
             }
 
-            if (gridCell.column > 0 && $scope.gameModel.grid[gridCell.row][gridCell.column - 1].ownedBy == gridCell.ownedBy) {
+            if (gridCell.column > 0 && $scope.gameModel.grid[gridCell.row][gridCell.column - 1].ownedBy != "") {
                 gridCell.left = true;
                 $scope.gameModel.grid[gridCell.row][gridCell.column - 1].right = true;
                 refreshConnectionClass($scope.gameModel.grid[gridCell.row][gridCell.column - 1]);
             }
 
-            if (gridCell.column < $scope.gameModel.grid[0].length - 1 && $scope.gameModel.grid[gridCell.row][gridCell.column + 1].ownedBy == gridCell.ownedBy) {
+            if (gridCell.column < $scope.gameModel.grid[0].length - 1 && $scope.gameModel.grid[gridCell.row][gridCell.column + 1].ownedBy != "") {
                 gridCell.right = true;
                 $scope.gameModel.grid[gridCell.row][gridCell.column + 1].left = true;
                 refreshConnectionClass($scope.gameModel.grid[gridCell.row][gridCell.column + 1]);
@@ -65,7 +65,7 @@ angular.module('squaresgame', [])
             refreshConnectionClass(gridCell);
         }
 
-        var playerSquares = 250;
+        var playerSquares = 400;
         var cpuSquares = 0;
         
         $scope.gameModel = new GameModel(30, 30);
@@ -92,7 +92,7 @@ angular.module('squaresgame', [])
         }
 
         $document.ready(function () {
-            $interval(update, 1000);
+            $interval(update, 500);
         });
 
     }]);
