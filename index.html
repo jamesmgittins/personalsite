@@ -10,20 +10,21 @@
 <script src="js/angular-sanitize.min.js"></script>
 <script src="js/squaregame.js"></script>
 <style>
+table.squares-game {border:1px solid lightblue;margin-top:25px;margin-left:auto;margin-right:auto;}
 table.squares-game td {height:30px;width:30px;border-radius:15px;}
 table.squares-game td.top {border-top-left-radius:0;border-top-right-radius:0;}
 table.squares-game td.bottom {border-bottom-left-radius:0;border-bottom-right-radius:0;}
 table.squares-game td.left {border-top-left-radius:0;border-bottom-left-radius:0;}
 table.squares-game td.right {border-top-right-radius:0;border-bottom-right-radius:0;}
 table.squares-game td:hover {background-color:lightgreen;cursor:pointer;}
-table.squares-game td.player-1 {background-color:lightblue;}
-table.squares-game td.player-2 {background-color:lightcoral;}
+table.squares-game td.player-1 {background-color:lightblue;cursor:default;}
+table.squares-game td.player-2 {background-color:lightcoral;cursor:default;}
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
 <div class="col-xs-12" ng-app="squaresgame" ng-controller="Squares">
-    <table class="squares-game" style="width:100%;">
+    <table class="squares-game">
         <tr ng-repeat="row in gameModel.grid">
             <td ng-repeat="column in row" ng-click="clickSquare(column)" ng-class="column.ownedBy + ' ' + column.connections"></td>
         </tr>
