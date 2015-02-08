@@ -1,11 +1,13 @@
 ﻿
 function GameModel(rows, columns) {
     this.grid = [];
+    this.emptySpaces = [];
 
     for (var i = 0; i < rows; i++) {
         this.grid[i] = [];
         for (var j = 0; j < columns; j++) {
-            this.grid[i][j] = new GridCell(i,j);
+            this.grid[i][j] = new GridCell(i, j);
+            this.emptySpaces.push(this.grid[i][j]);
         }
     }
 }
@@ -34,6 +36,12 @@ angular.module('squaresgame', [])
                 gridCell.connections = gridCell.connections + " left";
             if (gridCell.right)
                 gridCell.connections = gridCell.connections + " right";
+        }
+
+        function removeFromEmptyArray(gridCell) {
+            var index = $scope.gameModel.emptySpaces.indexOf(gridCell);
+            if (index > -1)
+                $scope.gameModel.emptySpaces.splice(index, 1);
         }
 
         function testEdges(gridCell) {
@@ -65,13 +73,14 @@ angular.module('squaresgame', [])
             refreshConnectionClass(gridCell);
         }
 
-        var playerSquares = 400;
+        var playerSquares = 0;
         var cpuSquares = 0;
         
         $scope.gameModel = new GameModel(30, 30);
 
         $scope.clickSquare = function (gridCell) {
             if (gridCell.ownedBy == "") {
+                removeFromEmptyArray(gridCell);
                 gridCell.ownedBy = "player-1";
                 testEdges(gridCell);
                 playerSquares++;
@@ -79,16 +88,13 @@ angular.module('squaresgame', [])
         }
 
         function update() {
-            if (cpuSquares < playerSquares) {
-                var i = Math.floor(Math.random() * $scope.gameModel.grid.length);
-                var j = Math.floor(Math.random() * $scope.gameModel.grid[i].length);
-                if ($scope.gameModel.grid[i][j].ownedBy == "") {
-                    $scope.gameModel.grid[i][j].ownedBy = "player-2";
-                    testEdges($scope.gameModel.grid[i][j]);
-                    cpuSquares++;
-                }
+            var gridCell = $scope.gameModel.emptySpaces[Math.floor(Math.random() * $scope.gameModel.emptySpaces.length)];
+            if (gridCell.ownedBy == "") {
+                removeFromEmptyArray(gridCell);
+                gridCell.ownedBy = "player-2";
+                testEdges(gridCell);
+                cpuSquares++;
             }
-            
         }
 
         $document.ready(function () {
