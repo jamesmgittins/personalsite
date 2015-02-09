@@ -7,14 +7,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 1654,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -44,6 +36,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/James/Documents/GitHub/personalsite/index.html",
 		"/C/Users/James/Documents/GitHub/twittertool/README.md",
 		"/C/Users/James/Documents/GitHub/ostwittertool/README.md",
 		"/C/Users/James/Documents/GitHub/ostwittertool/views/layout.jade",
@@ -100,37 +93,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 1654,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								893,
-								893
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
