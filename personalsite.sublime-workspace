@@ -7,23 +7,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2063,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			]
 		],
-		"width": 400.0
+		"width": 0.0
 	},
 	"console":
 	{
-		"height": 125.0
+		"height": 0.0,
+		"history":
+		[
+		]
 	},
 	"distraction_free":
 	{
@@ -34,28 +41,18 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/C/Github/personalsite"
+	],
 	"file_history":
 	[
-		"/C/Users/James/Documents/GitHub/personalsite/index.html",
-		"/C/Users/James/Documents/GitHub/twittertool/README.md",
-		"/C/Users/James/Documents/GitHub/ostwittertool/README.md",
-		"/C/Users/James/Documents/GitHub/ostwittertool/views/layout.jade",
-		"/C/Users/James/Documents/GitHub/ostwittertool/views/index.jade",
-		"/C/Users/James/Documents/GitHub/twittertool/views/index.jade",
-		"/C/Users/James/Documents/GitHub/dopeslingertycoon/index.html",
-		"/C/Users/James/Documents/GitHub/twittertool/views/layout.jade",
-		"/C/Users/James/Documents/GitHub/ostwittertool/bin/www",
-		"/C/Users/James/Documents/GitHub/ostwittertool - Copy/server.js",
-		"/C/Users/James/Documents/GitHub/ostwittertool/server.js",
-		"/C/Users/James/Documents/GitHub/twittertool/bin/www",
-		"/C/Users/James/Dropbox/NodeProject/myapp/views/index.jade",
-		"/C/Users/James/Dropbox/NodeProject/myapp/views/layout.jade",
-		"/C/Users/James/Dropbox/NodeProject/myapp/app.js",
-		"/C/Users/James/Dropbox/NodeProject/myapp/routes/index.js",
-		"/C/Users/James/Dropbox/NodeProject/myapp/routes/users.js",
-		"/C/Users/James/Dropbox/NodeProject/myapp/public/stylesheets/style.css",
-		"/C/Users/James/Dropbox/NodeProject/myapp/views/error.jade",
-		"/C/Users/James/Dropbox/NodeProject/myapp/bin/www"
+		"/C/Github/socialmediacorpus/node_modules/connect-assets/package.json",
+		"/C/Github/socialmediacorpus/app.js",
+		"/C/Github/socialmediacorpus/config/secrets.js",
+		"/C/Github/socialmediacorpus/controllers/api.js",
+		"/C/Github/socialmediacorpus/server.js",
+		"/C/Github/dopeslingertycoon/index.html"
 	],
 	"find":
 	{
@@ -73,9 +70,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"error",
-			"look",
-			"did"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -93,8 +87,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								395,
+								394
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -129,6 +152,11 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "personalsite.sublime-project",
 	"replace":
 	{
 		"height": 0.0
@@ -144,16 +172,31 @@
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"selected_items":
 		[
 		],
-		"width": 380.0
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
-	"status_bar_visible": true
+	"side_bar_width": 456.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
 }
