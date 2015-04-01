@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>Shootr</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        canvas {
+            border: 1px dashed #0b0;
+        }
+
+        body {
+            padding-top: 20px;
+            background-color: #000;
+            font-family: "Courier";
+        }
+
+        #stats {
+            margin-top: 15px;
+        }
+
+        div {
+            text-align: center;
+            color: #0B0;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px;
+            color: #0B0;
+            background-color: #000;
+            border: 2px outset #0b0;
+            border-radius: 30%;
+        }
+
+        button:active {
+            border: 1px inset #0b0;
+            margin: 6px;
+        }
+
+        button:focus {
+            outline: 0;
+        }
+    </style>
+</head>
+<body style="padding-top:20px;background-color:#000;">
+    <div class="row">
+        <div class="col-xs-12 col-sm-4"></div>
+        <div class="col-xs-12 col-sm-4">
+            <canvas id="game_canvas"></canvas>
+            <div id="stats"></div>
+            <div>
+                <button onclick="newShip();">New Ship</button>
+                <label>Cycle</label>
+                <input type="checkbox" onclick="cycle=this.checked">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4"></div>
+    </div>
+    <div class="container">
+
+    </div>
+    <script src="js/shootr.js"></script>
+</body>
+</html>
