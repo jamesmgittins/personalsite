@@ -2,8 +2,7 @@
 <head>
 <title>James Gittins</title>
 <meta name="viewport" content="initial-scale=1.0">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/paper.min.css">
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
@@ -14,36 +13,55 @@
 
   ga('create', 'UA-56478232-2', 'auto');
   ga('send', 'pageview');
-
 </script>
 <style>
-.jumbotron {margin-top:30px;padding:30px!important;}
-.jumbotron > h1 {margin-top:0;}
+    body {padding:20px 0;}
+    .panel,.panel-heading {transition:background-color linear 0.1s;}
+    .panel {background-color:#fff;}
+    .panel:hover{background-color:#bfcfff;}
+    .panel-heading {background-color:#f0f0f0;}
+    .panel:hover > .panel-heading {background-color:#abbeff;}
 </style>
 </head>
 <body>
 <div class="container">
-  <div class="jumbotron">
-    <h1>Twittertool</h1>
-    <p>A web application to aid in the research of language used on twitter. Built with Node.js and Express.</p>
-    <a href="http://twittertool.jamesgittins.com" class="btn btn-primary btn-lg">Go</a>
-    <a href="https://github.com/jamesmgittins/socialmediacorpus" class="btn btn-default btn-lg">Github</a>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h1>Twittertool</h1>
+      </div>
+      <div class="panel-body">
+          <p>A web application to aid in the research of language used on twitter. Built with Node.js and Express.</p>
+          <a href="http://twittertool.jamesgittins.com" class="btn btn-primary btn-lg">Go</a>
+          <a href="https://github.com/jamesmgittins/socialmediacorpus" class="btn btn-default btn-lg">Github</a>
+      </div>
   </div>
-  <div class="jumbotron">
-    <h1>Android Apps</h1>
-    <p>Various android apps I have published on the play store.</p>
-    <a href="https://play.google.com/store/apps/developer?id=James+Gittins" class="btn btn-primary btn-lg">Go</a>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h1>Android Apps</h1>
+      </div>
+      <div class="panel-body">
+          <p>Various android apps I have published on the play store.</p>
+          <a href="https://play.google.com/store/apps/developer?id=James+Gittins" class="btn btn-primary btn-lg">Go</a>
+      </div>
   </div>
-  <div class="jumbotron">
-    <h1>Doom Live Wallpaper</h1>
-    <p>An android application that simulates a game of Doom running on your wallpaper.</p>
-    <a href="http://forum.xda-developers.com/showthread.php?t=827898" class="btn btn-primary btn-lg">Go</a>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <h1>Doom Live Wallpaper</h1>
+      </div>
+      <div class="panel-body">
+          <p>An android application that simulates a game of Doom running on your wallpaper.</p>
+          <a href="http://forum.xda-developers.com/showthread.php?t=827898" class="btn btn-primary btn-lg">Go</a>
+      </div>
   </div>
-  <div class="jumbotron">
-    <h1>Dope slinger tycoon</h1>
-    <p>An idle game that runs in the browser. Built with angularjs.</p>
-    <a href="http://dopeslingertycoon.com" class="btn btn-primary btn-lg">Go</a>
-    <a href="https://github.com/jamesmgittins/dopeslingertycoon" class="btn btn-default btn-lg">Github</a>
+  <div class="panel panel-default">
+      <div class="panel-heading">
+          <h1>Dope slinger tycoon</h1>
+      </div>
+      <div class="panel-body">
+          <p>An idle game that runs in the browser. Built with angularjs.</p>
+          <a href="http://dopeslingertycoon.com" class="btn btn-primary btn-lg">Go</a>
+          <a href="https://github.com/jamesmgittins/dopeslingertycoon" class="btn btn-default btn-lg">Github</a>
+      </div>
   </div>
 </div>
 </body>
