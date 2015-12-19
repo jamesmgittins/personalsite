@@ -24,8 +24,8 @@
     .panel-heading {background-color:#f0f0f0;}
     .panel:hover > .panel-heading {background-color:#abbeff;}
     .hero {width:100%;height:100vh;overflow:hidden;margin-bottom:25px;position:relative;display:table;}
-    .hero > .table-cell {display:table-cell;vertical-align:middle;text-align:center;}
-    .hero > .table-cell > h1 {font-size:120px;}
+    .hero > .table-cell {display:table-cell;vertical-align:middle;text-align:center;padding:25px;}
+    .hero > .table-cell > h1 {font-size:100px;}
     #trianglify-canvas {width:100%;height:100%;position:absolute;}
 </style>
 </head>
@@ -99,14 +99,24 @@
         </div>
     </div>
     <script>
-        var pattern = Trianglify({
-            width: $("div.hero").width(),
-            height: $("div.hero").height(),
-            x_colors: Trianglify.colorbrewer.Spectral,
-            y_colors: Trianglify.colorbrewer.Spectral,
+
+        function setHero() {
+            $("div.hero").height("");
+            var pattern = Trianglify({
+                width: $("div.hero").width(),
+                height: $("div.hero").height(),
+                x_colors: Trianglify.colorbrewer.Spectral,
+                y_colors: Trianglify.colorbrewer.Spectral,
+            });
+            $("div.hero").css("background", "url(" + pattern.png() + ")")
+            $("div.hero").height($("div.hero").height());
+        }
+
+        $(window).resize(function () {
+            setHero();
         });
-        $("div.hero").css("background", "url(" + pattern.png() + ")")
-        $("div.hero").height($("div.hero").height());
+
+        setHero();
     </script>
 </body>
 </html>
