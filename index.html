@@ -100,6 +100,15 @@
     </div>
     <script>
 
+        var allowResize = true;
+        $(window).scroll(function () {
+            allowResize = false;
+            clearTimeout($.data(this, 'scrollCheck'));
+            $.data(this, 'scrollCheck', setTimeout(function () {
+                allowResize = true;
+            }, 500));
+        });
+
         function setHero() {
             $("div.hero").height("");
             var pattern = Trianglify({
@@ -113,7 +122,8 @@
         }
 
         $(window).resize(function () {
-            setHero();
+            if (allowResize)
+                setHero();
         });
 
         setHero();
