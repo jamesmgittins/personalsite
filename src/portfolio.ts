@@ -38,7 +38,7 @@ export const portfolio = [
         ['mandelbrot.jpg']),
     new PortfolioEntry(
         'Doodles', 
-        'A simple social network where users can post and reply to doodles. Built with nodeJs, express and mysql.',
+        'A simple social network where users can post and reply to doodles. Built with NodeJS, express and MySQL.',
         [
             new Link(linkNames.site, 'https://doodles.gti.nz', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/pixelswebsite', false)
@@ -46,7 +46,7 @@ export const portfolio = [
         ['doodles.jpg']),
     new PortfolioEntry(
         'Walking Simulator', 
-        'A procedurally generated world created with ThreeJS and Typescript.',
+        'A procedurally generated world created with ThreeJS and TypeScript.',
         [
             new Link(linkNames.site, 'https://walking.gti.nz', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/walking', false)
