@@ -42,7 +42,7 @@
         margin-top: auto;
     }
     div.links > a {
-        margin:0 1rem 0 0;
+        margin:0 1rem 1rem 0;
         padding:0.5rem;
         box-shadow: 4px 4px 8px #ddd, -4px -4px 8px #fff;
         border-radius: 0.5rem;
@@ -67,9 +67,6 @@
     }
     div.links > a.primary:hover {
         background-color: #222;
-    }
-    div.images {
-        margin-top: 1rem;
     }
     div.images div.image {
         box-shadow: 4px 4px 8px #bbb, -4px -4px 8px #fff;
