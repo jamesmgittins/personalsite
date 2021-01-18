@@ -46,10 +46,17 @@
     }
     div.links > a.primary {
         background-color: #333;
+        box-shadow: 4px 4px 8px #bbb, -4px -4px 8px #fff;
         color:#eee;
     }
     div.links > a:hover {
         background-color: #f5f5f5;
+    }
+    div.links > a:active {
+        box-shadow: inset 4px 4px 8px #bbb;
+    }
+    div.links > a.primary:active {
+        box-shadow: inset 4px 4px 8px #000;
     }
     div.links > a.primary:hover {
         background-color: #222;
