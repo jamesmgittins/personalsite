@@ -13,6 +13,13 @@
             <a href={link.url} class:primary={link.primary} target="_blank">{link.text}</a>
         {/each}
     </div>
+    {#if item.images.length > 0}
+    <div class="images">
+        <div class="image" style="background-image:url(images/{item.images[0]})">
+
+        </div>
+    </div>
+    {/if}
 </div>
 
 <style>
@@ -20,8 +27,8 @@
         background-color: #eee;
         width: 80%;
         padding: 1rem 2rem 2rem;
-        margin: 1rem auto;
-        /* box-shadow: 5px 5px 9px #ddd, -5px -5px 9px #ffffff; */
+        margin: 1rem auto 4rem;
+        box-shadow: 4px 4px 8px #333;
         color:#222;
         border-radius: 0.5rem;
         display: flex;
@@ -35,7 +42,7 @@
         margin-top: auto;
     }
     div.links > a {
-        margin:0.5rem 1rem 0 0;
+        margin:0 1rem 0 0;
         padding:0.5rem;
         box-shadow: 4px 4px 8px #ddd, -4px -4px 8px #fff;
         border-radius: 0.5rem;
@@ -60,5 +67,16 @@
     }
     div.links > a.primary:hover {
         background-color: #222;
+    }
+    div.images {
+        margin-top: 1rem;
+    }
+    div.images div.image {
+        box-shadow: 4px 4px 8px #bbb, -4px -4px 8px #fff;
+        border-radius: 0.5rem;
+        height:20rem;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 </style>
