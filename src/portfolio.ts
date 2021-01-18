@@ -64,7 +64,7 @@ export const portfolio = [
         'Doom Live Wallpaper', 
         'An android application that simulates a game of Doom running on your wallpaper.',
         [
-            new Link('XDA Developers', 'http://forum.xda-developers.com/showthread.php?t=827898', true),
+            new Link('XDA Developers', 'https://forum.xda-developers.com/showthread.php?t=827898', true),
             new Link('Download APK', 'https://github.com/jamesmgittins/doomlivewallpaper/releases/download/1.41/DoomLiveWallpaper.apk', false),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/doomlivewallpaper', false)
         ],
@@ -73,7 +73,7 @@ export const portfolio = [
         'Dope Slinger Tycoon', 
         'An idle game that runs in the browser. Built with AngularJS.',
         [
-            new Link(linkNames.site, 'http://dopeslinger.gti.nz', true),
+            new Link(linkNames.site, 'https://dopeslinger.gti.nz', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/dopeslingertycoon', false)
         ],
         []),
@@ -81,7 +81,7 @@ export const portfolio = [
         'Shootr', 
         'An incremental arcade style game that runs in the browser. Built with PixiJS.',
         [
-            new Link(linkNames.site, 'http://shootr.gti.nz/beta', true),
+            new Link(linkNames.site, 'https://shootr.gti.nz/beta', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/shootr', false)
         ],
         []),
