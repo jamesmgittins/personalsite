@@ -35,7 +35,7 @@ export const portfolio = [
             new Link(linkNames.site, 'https://jamesmgittins.github.io/Svelte-Mandelbrot/', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/Svelte-Mandelbrot', false)
         ],
-        ['mandelbrot.jpg']),
+        ['mandelbrot.jpg','mandelbrot2.jpg']),
     new PortfolioEntry(
         'Doodles', 
         'A simple social network where users can post and reply to doodles. Built with NodeJS, express and MySQL.',
@@ -43,7 +43,7 @@ export const portfolio = [
             new Link(linkNames.site, 'https://doodles.gti.nz', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/pixelswebsite', false)
         ],
-        ['doodles.jpg']),
+        ['doodles.jpg','doodles2.jpg','doodles3.jpg']),
     new PortfolioEntry(
         'Walking Simulator', 
         'A procedurally generated world created with ThreeJS and TypeScript.',
@@ -51,7 +51,7 @@ export const portfolio = [
             new Link(linkNames.site, 'https://walking.gti.nz', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/walking', false)
         ],
-        ['walking.jpg']),
+        ['walking.jpg','walking2.jpg']),
     new PortfolioEntry(
         'Incremancer', 
         'Zombie themed browser game using PixiJS and AngularJS.',
@@ -68,7 +68,7 @@ export const portfolio = [
             new Link('Download APK', 'https://github.com/jamesmgittins/doomlivewallpaper/releases/download/1.41/DoomLiveWallpaper.apk', false),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/doomlivewallpaper', false)
         ],
-        ['doomlw.jpg']),
+        ['doomlw.jpg','doomlw2.png']),
     new PortfolioEntry(
         'Dope Slinger Tycoon', 
         'An idle game that runs in the browser. Built with AngularJS.',
@@ -84,7 +84,7 @@ export const portfolio = [
             new Link(linkNames.site, 'https://shootr.gti.nz/beta', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/shootr', false)
         ],
-        ['shootr.jpg']),
+        ['shootr.jpg','shootr2.jpg']),
     new PortfolioEntry(
         'Smartbomb', 
         "Interface for Giantbomb's video API that runs on LG WebOS smart TVs. Build with jQuery.",
