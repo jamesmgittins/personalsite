@@ -30,7 +30,7 @@ const linkNames = {
 export const portfolio = [
     new PortfolioEntry(
         'Mandelbrot Wallpaper Generator', 
-        'A web based mandelbrot wallpaper generator built with svelte JS.',
+        'A web based mandelbrot wallpaper generator built with Svelte.',
         [
             new Link(linkNames.site, 'https://jamesmgittins.github.io/Svelte-Mandelbrot/', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/Svelte-Mandelbrot', false)
