@@ -62,7 +62,7 @@ export const portfolio = [
         ['incremancer3.png', 'incremancer2.png', 'incremancer1.png']),
     new PortfolioEntry(
         'Doom Live Wallpaper', 
-        'An android application that simulates a game of Doom running on your wallpaper.',
+        'An android application that simulates a game of Doom running on your wallpaper. Written in Java.',
         [
             new Link('XDA Developers', 'https://forum.xda-developers.com/showthread.php?t=827898', true),
             new Link('Download APK', 'https://github.com/jamesmgittins/doomlivewallpaper/releases/download/1.41/DoomLiveWallpaper.apk', false),
@@ -87,7 +87,7 @@ export const portfolio = [
         ['shootr.jpg','shootr2.jpg']),
     new PortfolioEntry(
         'Smartbomb', 
-        "Interface for Giantbomb's video API that runs on LG WebOS smart TVs. Build with jQuery.",
+        "Interface for Giantbomb's video API that runs on LG WebOS smart TVs. Built with jQuery.",
         [
             new Link(linkNames.github, 'https://github.com/jamesmgittins/smartbomb', true)
         ],
