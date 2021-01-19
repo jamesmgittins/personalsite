@@ -10,8 +10,8 @@
 <div class="hero">
     <div class="table-cell">
         {#if visible}
-            <h1 in:fly={{x: -1000, duration : 3000, easing: sineInOut}}>James Gittins</h1>
-            <h2 in:fly={{x: 1000, duration : 3000, easing: sineInOut}}>Software Developer</h2>
+            <h1 in:fly={{x: -500, duration : 2000, easing: sineInOut}}>James Gittins</h1>
+            <h2 in:fly={{x: 500, duration : 2000, easing: sineInOut}}>Software Developer</h2>
         {/if}
     </div>
 </div>
