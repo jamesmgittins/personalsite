@@ -1,11 +1,18 @@
 <script lang="ts">
+    import {fly} from 'svelte/transition';
+    import { sineInOut } from 'svelte/easing';
+    let visible = false;
+    setTimeout(() => visible = true, 200);
+
 </script>
 
 
 <div class="hero">
     <div class="table-cell">
-        <h1>James Gittins</h1>
-        <h2>Software Developer</h2>
+        {#if visible}
+            <h1 in:fly={{x: -1000, duration : 3000, easing: sineInOut}}>James Gittins</h1>
+            <h2 in:fly={{x: 1000, duration : 3000, easing: sineInOut}}>Software Developer</h2>
+        {/if}
     </div>
 </div>
 
