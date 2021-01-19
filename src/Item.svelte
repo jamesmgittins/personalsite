@@ -36,6 +36,12 @@
         display: flex;
         flex-direction: column;
     }
+    @media only screen and (max-width: 600px) {
+        div.item {
+            width: calc(98% - 3rem);
+            padding: 1rem 1.5rem 2rem;
+        }
+    }
     div.item > .panel > h5 {
         font-size : 2rem;
         margin: 0;
