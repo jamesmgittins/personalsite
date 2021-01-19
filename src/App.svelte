@@ -12,6 +12,7 @@
 		font-family: 'Raleway', sans-serif;
 		font-size:16px;
 		margin:0;
+		background-color: rgb(31, 102, 31);
 	}
 	:global(#canvas-container) {
 		height:100% !important;
