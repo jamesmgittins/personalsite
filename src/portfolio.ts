@@ -76,7 +76,7 @@ export const portfolio = [
             new Link(linkNames.site, 'https://dopeslinger.gti.nz', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/dopeslingertycoon', false)
         ],
-        ['dopeslinger.jpg']),
+        ['dopeslinger.jpg','dopeslinger2.jpg']),
     new PortfolioEntry(
         'Shootr', 
         'An incremental arcade style game that runs in the browser. Built with PixiJS.',
@@ -91,5 +91,5 @@ export const portfolio = [
         [
             new Link(linkNames.github, 'https://github.com/jamesmgittins/smartbomb', true)
         ],
-        ['smartbomb.jpg']),
+        ['smartbomb.jpg','smartbomb.jpg']),
 ];
