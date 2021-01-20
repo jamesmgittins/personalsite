@@ -17,27 +17,27 @@
 	:global(#canvas-container) {
 		height:100% !important;
 		position:fixed;
+		overflow: hidden;
 		bottom:0;
 		left:0;
 		z-index: -10;
 	}
-	:global(#canvas-container::before, #canvas-container::after) {
+	:global(#canvas-container::before) {
 		content: "";
 		display: block;
 		position: absolute;
-		background-color: rgb(31, 102, 31);
-		width:50%;
-		height:100%;
-		top:0;
-		transition: width 4s ease-in-out;
+		border:max(100vh, 100vw) solid rgb(31, 102, 31);
+  		border-radius:50%;
+		top:20%;
+		left:50%;
+		transform:translate(-50%, -50%);
+		width:0;
+		height:0;
+		transition: all 12s;
 	}
-	:global(#canvas-container::before) {
-		left:0;
-	}
-	:global(#canvas-container::after) {
-		right:0;
-	}
-	:global(#canvas-container.ready::before, #canvas-container.ready::after) {
-		width: 0;
+	:global(#canvas-container.ready::before) {
+		width:max(200vh, 200vw);
+  		height:max(200vh, 200vw);
+		top:50%;
 	}
 </style>
