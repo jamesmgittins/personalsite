@@ -24,7 +24,8 @@
     }
     @media only screen and (min-width: 1500px) {
         div {
-            margin: 0 5rem 10rem;
+            max-width: 1300px;
+            margin: 0 auto 10rem;
         }
     }
     h1 {
