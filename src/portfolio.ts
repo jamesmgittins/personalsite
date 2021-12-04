@@ -54,7 +54,7 @@ export const portfolio = [
         ['walking.jpg','walking2.jpg']),
     new PortfolioEntry(
         'Incremancer', 
-        'Zombie themed browser game using PixiJS and AngularJS.',
+        'Zombie themed browser game using PixiJS and AngularJS. Also released on google play store.',
         [
             new Link(linkNames.site, 'https://incremancer.gti.nz', true),
             new Link(linkNames.github, 'https://github.com/jamesmgittins/incremancer', false)
@@ -92,4 +92,20 @@ export const portfolio = [
             new Link(linkNames.github, 'https://github.com/jamesmgittins/smartbomb', true)
         ],
         ['smartbomb.jpg','smartbomb.jpg']),
+    new PortfolioEntry(
+        'Light the Way Home', 
+        "Quick game made for the incremental game jam 2021 on itch.io. Made in about 2 days. Using svelte and pixijs.",
+        [
+            new Link(linkNames.site, 'https://jamesmgittins.github.io/light-the-way-home/', true),
+            new Link(linkNames.github, 'https://github.com/jamesmgittins/light-the-way-home', false)
+        ],
+        ['lighttheway1.jpg','lighttheway2.jpg']),
+    new PortfolioEntry(
+        'Run Out of Town', 
+        "Grand Theft Auto inspired 3D game made for the incremental game jam on itch.io. Made in under 2 weeks. Using svelte and threejs.",
+        [
+            new Link(linkNames.site, 'https://jamesmgittins.github.io/runoutoftown/', true),
+            new Link(linkNames.github, 'https://github.com/jamesmgittins/runoutoftown', false)
+        ],
+        ['runout1.jpg','runout2.jpg']),
 ];
