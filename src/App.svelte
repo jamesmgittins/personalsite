@@ -40,4 +40,13 @@
   		height:max(200vh, 200vw);
 		top:50%;
 	}
+	:global(#canvas-container.ready.finished::before) {
+		content: none;
+		display: none;
+		width:auto;
+  		height:auto;
+		position: unset;
+		transform: none;
+		border: none;
+	}
 </style>
