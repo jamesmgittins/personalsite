@@ -29,6 +29,14 @@ const linkNames = {
 
 export const portfolio = [
     new PortfolioEntry(
+        'Untitled Space Game', 
+        'A half completed space trading game. Build with threejs and svelte.',
+        [
+            new Link(linkNames.site, 'https://space.gti.nz', true),
+            new Link(linkNames.github, 'https://github.com/jamesmgittins/spacegamesite', false)
+        ],
+        ['space2.jpg','space1.jpg']),
+    new PortfolioEntry(
         'Mandelbrot Wallpaper Generator', 
         'A web based mandelbrot wallpaper generator built with Svelte.',
         [
