@@ -36,6 +36,14 @@ export const portfolio = [
             new Link(linkNames.github, 'https://github.com/jamesmgittins/spacegamesite', false)
         ],
         ['space2.jpg','space1.jpg']),
+      new PortfolioEntry(
+          'Rogue Trivia', 
+          'A roguelike inspired trivia game. Build with sveltekit and tailwindcss.',
+          [
+              new Link(linkNames.site, 'https://trivia.gti.nz', true),
+              new Link(linkNames.github, 'https://github.com/jamesmgittins/triva-site/', false)
+          ],
+          ['trivia1.png','trivia2.png']),
     new PortfolioEntry(
         'Mandelbrot Wallpaper Generator', 
         'A web based mandelbrot wallpaper generator built with Svelte.',
